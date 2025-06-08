@@ -26,8 +26,18 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#1e3a8a", // Deep blue
           foreground: "hsl(var(--primary-foreground))",
+          50: "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#2563eb",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -53,19 +63,11 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        blue: {
-          900: "#1e3a8a",
-          800: "#1e40af",
-        },
-        orange: {
-          500: "#f97316",
-          600: "#ea580c",
-        },
-        sky: {
-          100: "#e0f2fe",
-          400: "#38bdf8",
-          700: "#0369a1",
-        },
+        // Custom colors for the education center
+        "deep-blue": "#1e3a8a",
+        "light-blue": "#60a5fa",
+        "orange-accent": "#f97316",
+        "light-gray": "#f8fafc",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -89,6 +91,6 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+}
 
 export default config
